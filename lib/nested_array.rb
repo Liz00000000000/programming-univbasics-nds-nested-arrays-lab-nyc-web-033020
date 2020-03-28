@@ -22,10 +22,6 @@ def assembled_matrix
   # Organic standards require that organic products be stored ABOVE conventional, not the other way around
   # Make sure conventional produce is first, on the 'zeroth' / 'bottom' shelf
   array = [ ]
-  con_pro = [ ]
-  org_pro = [ ]
-  CONVENTIONAL_PRODUCE.map{|fruit| con_pro << fruit}
-  ORGANIC_PRODUCE.map{|fruit| org_pro << fruit}
   array << con_pro
   array << org_pro
   return array
