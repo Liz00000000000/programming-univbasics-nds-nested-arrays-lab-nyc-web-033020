@@ -24,8 +24,8 @@ def assembled_matrix
   array = [ ]
   con_pro = [ ]
   org_pro
-  CONVENTIONAL_PRODUCE.map{|fruit| array << fruit}
-  ORGANIC_PRODUCE.map{|fruit| array << fruit}
+  CONVENTIONAL_PRODUCE.map{|fruit| con_pro << fruit}
+  ORGANIC_PRODUCE.map{|fruit| org_pro << fruit}
   array << con_pro
   array << org_pro
   return array
