@@ -23,7 +23,7 @@ def assembled_matrix
   # Make sure conventional produce is first, on the 'zeroth' / 'bottom' shelf
   array = [ ]
   CONVENTIONAL_PRODUCE.map{|fruit| array << fruit}
-  ORGANIC_PRODUCE.collect{|fruit| array << fruit}
+  ORGANIC_PRODUCE.map{|fruit| array << fruit}
   return array
 end
 
