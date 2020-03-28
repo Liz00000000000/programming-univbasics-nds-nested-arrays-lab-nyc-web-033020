@@ -24,7 +24,7 @@ def assembled_matrix
   array = [ ]
   ORGANIC_PRODUCE.each{|fruit| array << fruit}
   CONVENTIONAL_PRODUCE.each{|fruit| array << fruit}
-  return array
+  return array.flatten 
 end
 
 def sorted_matrix
